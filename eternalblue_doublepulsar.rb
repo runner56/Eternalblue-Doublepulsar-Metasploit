@@ -37,7 +37,8 @@ class MetasploitModule < Msf::Exploit::Remote
 	  ['Windows Server 2008 R2 (x86) (x64)',{}],
 	  ['Windows 7 (all services pack) (x86) (x64)',{}]
 	],
-      'Arch'           => [ARCH_X86,ARCH_X64],
+      #'Arch'           => [ARCH_X86,ARCH_X64],
+      'Arch'		=> ARCH_ALL,
 	  'ExitFunc'	   => 'thread',
 	  'Target'		   => 0,
       'License'     => MSF_LICENSE,
